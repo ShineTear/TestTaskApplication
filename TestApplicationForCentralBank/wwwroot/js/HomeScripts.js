@@ -1,17 +1,4 @@
-﻿$(document).ready(function () {
-    //$("#hiddenWindow").dialog({
-    //    autoOpen: false,
-    //    modal: true
-    //});
-    //$(".select2").select2({
-    //    allowClear: false,
-    //    placeholder: "",
-    //    theme: "bootstrap",
-    //    language: "ru"
-    //});
-});
-
-function addNewEmployee() {
+﻿function addNewEmployee() {
     $.get('/Home/AddEmployee/', function (data) {
         $('#result').html(data);
     });

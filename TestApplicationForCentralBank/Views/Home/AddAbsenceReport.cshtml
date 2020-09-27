@@ -5,7 +5,7 @@
     <select asp-for="EmployeeId" asp-items="Model.Employees"></select>
     <select asp-for="EmployeePositionId" asp-items="Model.Positions"></select>
     <input type="date" name="DateAbsence" placeholder="Дата отсутствия" />
-    <input type="time" name="TimeAbsence" required placeholder="Время отсутствия" />
+    <input type="time" name="TimeAbsence" required placeholder="Время отсутствия" value="@(new TimeSpan(0) )" />
     <input type="text" name="Reason" required placeholder="Причина отсутствия" />
 
     <br />
