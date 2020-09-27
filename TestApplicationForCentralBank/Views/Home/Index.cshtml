@@ -1,0 +1,50 @@
+﻿@model FilterModel
+<div style="float: right">
+    <p>
+        <a href="#hiddenWindow" onclick="addNewEmployee()">Добавить нового сотрудника</a>
+    </p>
+
+    <p>
+        <a href="#hiddenWindow" onclick="employeeList()">Показать список сотрудников</a>
+    </p>
+
+    <p>
+        <a href="#hiddenWindow" onclick="addNewEmployeePosition()">Добавить новую должность</a>
+    </p>
+
+    <p>
+        <a href="#hiddenWindow" onclick="employeePositionList()">Показать список должностей</a>
+    </p>
+</div>
+<p>
+    <a href="#hiddenWindow" onclick="addNewAbsenceReport()">Добавить новую запись</a>
+</p>
+
+<div id="hiddenWindow">
+    <div id="window">
+        <div id="result"></div>
+        <a href="#" class="close">Закрыть окно</a>
+    </div>
+</div>
+
+<form asp-action="Index" asp-controller="Home" method="POST">
+    Фильтровать по полям:
+    <br />
+    @Html.DisplayNameFor(model => model.EmployeeFio): <input type="text" name="EmployeeFio" placeholder="Фио" value="@Model.EmployeeFio" />
+    @Html.DisplayNameFor(model => model.Position): <input type="text" name="Position" placeholder="Должность" value="@Model.Position" />
+    @Html.DisplayNameFor(model => model.Reason): <input type="text" name="Reason" placeholder="Причина отсутствия" value="@Model.Reason" />
+    <br />
+    @Html.DisplayNameFor(model => model.DateFrom): <input type="date" name="DateFrom" value="@(Model.DateFrom.HasValue ? Model.DateFrom.Value.ToString("yyyy-MM-dd") : "")" />
+    @Html.DisplayNameFor(model => model.DateTo): <input type="date" name="DateTo" value="@(Model.DateTo.HasValue ? Model.DateTo.Value.ToString("yyyy-MM-dd") : "")" />
+    @Html.DisplayNameFor(model => model.TimeFrom): <input type="time" name="TimeFrom" value="@Model.TimeFrom" />
+    @Html.DisplayNameFor(model => model.TimeTo): <input type="time" name="TimeTo" value="@Model.TimeTo" />
+
+    <br />
+    <input type="submit" value="Применить фильтры" />
+</form>
+
+<div id="showFilterData">
+    @await Component.InvokeAsync("AbscenceList", Model)
+</div>
+
+

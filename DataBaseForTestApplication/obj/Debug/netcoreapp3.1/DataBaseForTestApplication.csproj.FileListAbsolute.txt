@@ -1,0 +1,9 @@
+C:\Users\Marishka\source\repos\DataBaseForTestApplication\bin\Debug\netcoreapp3.1\DataBaseForTestApplication.deps.json
+C:\Users\Marishka\source\repos\DataBaseForTestApplication\bin\Debug\netcoreapp3.1\DataBaseForTestApplication.dll
+C:\Users\Marishka\source\repos\DataBaseForTestApplication\obj\Debug\netcoreapp3.1\DataBaseForTestApplication.csprojAssemblyReference.cache
+C:\Users\Marishka\source\repos\DataBaseForTestApplication\obj\Debug\netcoreapp3.1\DataBaseForTestApplication.AssemblyInfoInputs.cache
+C:\Users\Marishka\source\repos\DataBaseForTestApplication\obj\Debug\netcoreapp3.1\DataBaseForTestApplication.AssemblyInfo.cs
+C:\Users\Marishka\source\repos\DataBaseForTestApplication\bin\Debug\netcoreapp3.1\DataBaseForTestApplication.pdb
+C:\Users\Marishka\source\repos\DataBaseForTestApplication\obj\Debug\netcoreapp3.1\DataBaseForTestApplication.csproj.CoreCompileInputs.cache
+C:\Users\Marishka\source\repos\DataBaseForTestApplication\obj\Debug\netcoreapp3.1\DataBaseForTestApplication.dll
+C:\Users\Marishka\source\repos\DataBaseForTestApplication\obj\Debug\netcoreapp3.1\DataBaseForTestApplication.pdb
